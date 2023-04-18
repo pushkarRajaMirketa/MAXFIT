@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Speaker_Suplpicate</fullName>
+    <active>true</active>
+    <errorConditionFormula>duplicate_speaker__c</errorConditionFormula>
+    <errorMessage>Speaker Already Exists</errorMessage>
+</ValidationRule>

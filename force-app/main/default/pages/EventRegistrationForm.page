@@ -1,0 +1,46 @@
+<apex:page controller="EventRegistrationController">
+    <apex:form >
+        <apex:pageMessages />
+        <apex:pageBlock title="Event Registration Form">
+            
+                <apex:pageBlockSection title="Event Organizer" collapsible="true">
+                    <apex:inputField label="Name" value="{! eventOrganizer.Name}"/>
+                    <apex:inputField label="Phone" value="{! eventOrganizer.Phone__c}"/>
+                    <apex:inputField label="Alternative Phone" value="{! eventOrganizer.Alternative_Phone__c}"/>
+                    <apex:inputField label="Email" value="{! eventOrganizer.Email__c}"/>
+                    <apex:inputField label="Alternative Email" value="{! eventOrganizer.Alternative_Email__c}"/>
+                    <apex:inputField label="Address" value="{! eventOrganizer.Address__c}"/>
+                </apex:pageBlockSection>
+            
+                <apex:pageBlockSection title="Event Location" collapsible="true">
+                    <apex:inputField label="Location Name" value="{!eventLocation.Name}"/>
+                    <apex:inputField label="Street" value="{!eventLocation.Street__c}"/>
+                    <apex:inputField label="City" value="{!eventLocation.City__c}"/>
+                    <apex:inputField label="State" value="{!eventLocation.State__c}"/>
+                    <apex:inputField label="Postal Code" value="{!eventLocation.Postal_Code__c}"/>
+                    <apex:inputField label="Country" value="{!eventLocation.Country__c}"/>
+                    <apex:inputField label="Landmark" value="{!eventLocation.Landmark__c}"/>
+                    <apex:inputField label="Verified" value="{!eventLocation.Verified__c}"/>
+                </apex:pageBlockSection>
+
+                <apex:pageBlockSection title="Event" collapsible="true">
+                    <apex:inputField label="Event Name" value="{!event.Name__c}"/>
+                    <apex:inputField label="Status" value="{!event.Status__c}"/>
+                    <apex:inputField label="Organizer" value="{!event.Organizer__c}"/>
+                    <apex:inputField label="End Date Time" value="{!event.End__c}"/>
+                    <apex:inputField label="Max Seats" value="{!event.Max_Seats__c}"/>
+                    <apex:inputField label="Location" value="{!event.Location__c}"/>
+                    <apex:inputField label="Live" value="{!event.Live__c}"/>
+                    <apex:inputField label="Recurring" value="{!event.Recurring__c}"/>
+                    <apex:inputField label="Event Type" value="{!event.Event_Type__c}"/>
+                    <apex:inputField label="Frequency" value="{!event.Frequency__c}"/>
+                </apex:pageBlockSection>
+
+                <apex:pageBlockButtons > 
+                    <apex:commandButton value="Save" action="{!save}" />
+                </apex:pageBlockButtons>
+                
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,32 @@
+<apex:page controller="AttendeeRegistrationController">
+    <apex:form >
+    <apex:pageMessages />
+    <apex:pageBlock title="Attendee Registration Form">
+        <apex:pageBlockSection title="Attendee Location">
+            <apex:inputField label="Location Name" value="{!location.Name}"/>
+            <apex:inputField label="Street" value="{!location.Street__c}"/>
+            <apex:inputField label="City" value="{!location.City__c}"/>
+            <apex:inputField label="State" value="{!location.State__c}"/>
+            <apex:inputField label="Postal Code" value="{!location.Postal_Code__c}"/>
+            <apex:inputField label="Country" value="{!location.Country__c}"/>
+            <apex:inputField label="Landmark" value="{!location.Landmark__c}"/>
+            <apex:inputField label="Verified" value="{!location.Verified__c}"/>
+        </apex:pageBlockSection>
+
+        <apex:pageBlockSection title="Attendee Details">
+            <apex:inputField label="Name" value="{!attendee.Name}"/>
+            <apex:inputField label="Company" value="{!attendee.Company__c}"/>
+            <apex:inputField label="Phone Number" value="{!attendee.Phone__c}"/>
+            <apex:inputField label="Email" value="{!attendee.Email__c}"/>
+            <apex:inputField label="Address" value="{!attendee.Address__c}"/>
+            <apex:inputField label="Event" value="{!eventAttendee.Event__c}" rendered="{!eventAttendee.Event__c == null}"/>
+            <apex:outputField label="Event" value="{!eventAttendee.Event__c}" rendered="{!eventAttendee.Event__c != null}"/>
+        </apex:pageBlockSection>
+
+        <apex:pageBlockSection >
+            <apex:commandButton value="Save" action="{!save}" />
+        </apex:pageBlockSection>
+
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

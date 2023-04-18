@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#F47C4E</headerColor>
+        <logo>d3g51r98905ea1efa8948ddbf6bb4145b92</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>recruiting management app to streamline hiring by managing job postings, candidate applications, and communication.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Recruiting App</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Position__c</tabs>
+    <tabs>Job_Application__c</tabs>
+    <tabs>Candidate__c</tabs>
+    <tabs>Employment_Website__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Customer_Project__c</tabs>
+    <tabs>Location__c</tabs>
+    <tabs>Event_Organizer__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Recruiting_App_UtilityBar</utilityBar>
+</CustomApplication>

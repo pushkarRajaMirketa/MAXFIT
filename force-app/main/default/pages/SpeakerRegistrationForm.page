@@ -1,0 +1,16 @@
+<apex:page controller="SpeakerRegistrationController">
+    <apex:form >
+        <apex:pageMessages />
+        <apex:pageBlock title="Speaker Registration">
+            <apex:pageBlockSection >
+                <apex:inputField label="Name" value="{! speaker.Name}" />
+                <apex:inputField label="Company" value="{! speaker.Company__c}" />
+                <apex:inputField label="Phone Number" value="{! speaker.Phone__c}" />
+                <apex:inputField label="Email" value="{! speaker.Email__c}" />
+                <apex:inputField label="Event" value="{! eventSpeaker.Event__c}" rendered="{! eventSpeaker.Event__c == null}"/>
+                <apex:outputField label="Event" value="{! eventSpeaker.Event__c}" rendered="{! eventSpeaker.Event__c != null}"/>
+                <apex:commandButton value="Save" action="{!save}" />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
